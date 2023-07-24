@@ -24,3 +24,13 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+#springdoc:
+#  api-docs:
+#    path: /api-docs
+springdoc:
+  show-actuator: true
+  api-docs:
+    path: cambio-service/v3/api-docs
+  swagger-ui:
+    config-url: /cambio-service/v3/api-docs/swagger-config
+    url: /cambio-service/v3/api-docs
