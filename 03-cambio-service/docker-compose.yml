@@ -4,7 +4,7 @@ services:
     image: mysql
     cap_add:
       - SYS_NICE
-    restart: always
+    restart: on-failure
     environment:
        MYSQL_DATABASE: cambio_service
        MYSQL_ROOT_PASSWORD: admin123
